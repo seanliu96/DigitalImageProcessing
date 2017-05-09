@@ -36,7 +36,6 @@ laplacian_mask = np.array([ [-1, -1, -1],
                             [-1, 8, -1], 
                             [-1, -1, -1]])
 filtered_img = my_spatial_masking(img, laplacian_mask)
-print(filtered_img.min())
 new_img = my_normalize(img + filtered_img)
 plt.subplot(2,2,1)
 plt.title('original image')
